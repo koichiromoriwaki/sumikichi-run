@@ -89,22 +89,22 @@ function preload() {
 
     this.load.image(
         "rock",
-        "assets/rock.png"
+        "rock.png"
     );
 
     this.load.image(
         "drone",
-        "assets/drone.png"
+        "drone.png"
     );
 
     this.load.image(
         "feather",
-        "assets/feather.png"
+        "feather.png"
     );
 
     this.load.image(
         "guide",
-        "assets/guide.png"
+        "guide.png"
     );
 }
 
