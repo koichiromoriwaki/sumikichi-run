@@ -5,21 +5,67 @@
 
     <meta charset="UTF-8">
 
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>SUMIKICHI RUN</title>
 
+    <!-- Phaser -->
     <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
 
     <style>
 
-        body {
-
+        *{
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            background: black;
+        body{
+
+            background: #000;
 
             display: flex;
 
             justify-content: center;
+            align-items: center;
+
+            width: 100vw;
+            height: 100vh;
+
+            overflow: hidden;
+
+            touch-action: manipulation;
+        }
+
+        /* =========================
+           ゲーム領域
+        ========================= */
+
+        #game-container{
+
+            width: 100vw;
+            height: 100vh;
+
+            max-width: 720px;
+            max-height: 1280px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        canvas{
+
+            width: 100% !important;
+            height: 100% !important;
+
+            object-fit: contain;
+
+            image-rendering: auto;
         }
 
     </style>
@@ -28,7 +74,17 @@
 
 <body>
 
-<script src="game.js"></script>
+    <!-- =====================
+         Phaser描画先
+    ====================== -->
+
+    <div id="game-container"></div>
+
+    <!-- =====================
+         game.js
+    ====================== -->
+
+    <script src="game.js"></script>
 
 </body>
 
