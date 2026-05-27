@@ -74,17 +74,17 @@ function preload() {
 
     this.load.image(
         "sumikichi1",
-        "assets/sumikichi_1.png"
+        "sumikichi_1.png"
     );
 
     this.load.image(
         "sumikichi2",
-        "assets/sumikichi_2.png"
+        "sumikichi_2.png"
     );
 
     this.load.image(
         "cactus",
-        "assets/cactus.png"
+        "cactus.png"
     );
 
     this.load.image(
